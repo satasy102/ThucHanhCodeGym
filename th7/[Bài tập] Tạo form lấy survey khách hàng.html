@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[Bài tập] Tạo form lấy survey khách hàng</title>
     <style>
-        table tr:nth-child(even) {
+        table tr:nth-child(odd) {
             background: grey;
         }
 
@@ -58,28 +58,28 @@
         <textarea name="want" rows="10" cols="80"> </textarea> <br>
         <h5>Please rate your level of agreement with the following statements.</h5>
         <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
-            <tr>
+            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this);">
                 <th style=" width:600px"></th>
                 <th style="width:600px">Strongly Disagree</th>
                 <th style="width:600px">Disagree</th>
                 <th style="width:600px">Agree</th>
                 <th style="width:600px">Strongly Agree</th>
             </tr>
-            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this);">
+            <tr>
                 <th style="text-align: left;">Our products are priced fairly.</th>
                 <td><input type="radio"><br>1</td>
                 <td><input type="radio"><br>2</td>
                 <td><input type="radio"><br>3</td>
                 <td><input type="radio"><br>4</td>
             </tr>
-            <tr>
+            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this);">
                 <th style="text-align: left;">Our products are high quality.</th>
                 <td><input type="radio"><br>1</td>
                 <td><input type="radio"><br>2</td>
                 <td><input type="radio"><br>3</td>
                 <td><input type="radio"><br>4</td>
             </tr>
-            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this)">
+            <tr>
                 <th style="text-align: left;">You would recommend our product to a friend or coworker.</th>
                 <td><input type="radio"><br>1</td>
                 <td><input type="radio"><br>2</td>

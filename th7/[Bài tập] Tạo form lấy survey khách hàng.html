@@ -11,7 +11,7 @@
         }
 
         tr:hover {
-            background: yellow;
+            background: yellow !important;
             text-align: center;
         }
     </style>
@@ -58,7 +58,7 @@
         <textarea name="want" rows="10" cols="80"> </textarea> <br>
         <h5>Please rate your level of agreement with the following statements.</h5>
         <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
-            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this);">
+            <tr>
                 <th style=" width:600px"></th>
                 <th style="width:600px">Strongly Disagree</th>
                 <th style="width:600px">Disagree</th>
@@ -72,7 +72,7 @@
                 <td><input type="radio"><br>3</td>
                 <td><input type="radio"><br>4</td>
             </tr>
-            <tr onmouseover="changeColor(this);" onmouseout="defaultColor(this);">
+            <tr>
                 <th style="text-align: left;">Our products are high quality.</th>
                 <td><input type="radio"><br>1</td>
                 <td><input type="radio"><br>2</td>
@@ -89,18 +89,7 @@
         </table>
         <input type="submit" name="gui" value="submit">
     </form>
-    <script>
-        function checkInput() {
-            let count = document.getElementById('nhap').value.length;
-            document.getElementById('check').innerHTML = `Maximum of 250 characters.    Currently Used: ${count} characters.`;
-        }
-        function changeColor(tr) {
-            tr.style.background = 'yellow';
-        }
-        function defaultColor(tr) {
-            tr.style.background = 'grey';
-        }
-    </script>
+
 </body>
 
 </html>
